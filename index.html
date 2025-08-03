@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise's Portfolio</title>
+    <link rel="stylesheet" href="/Zeus/port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="/Achilles/scrit.js"></script>
+</head>
+<body>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home" class="nav-link" data-section="home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#portfolio" class="nav-link" data-section="portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
+    <!-- Desktop Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link" data-section="home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="#portfolio" class="nav-link" data-section="portfolio"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="home-container">
+            <div class="diagonal-split">
+                <div class="left-color"></div>
+                <div class="right-color"></div>
+            </div>
+            
+            <div class="left-content">
+                <div class="tech-icon">
+                    <div class="binary-circle"></div>
+                    <div class="core-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                </div>
+                <div class="typing-text">
+                    <h1>Hello, I'm <span class="glow-text">Promise</span></h1>
+                    <p>Welcome to my creative portfolio.</p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-square github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-square twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-square linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-square facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                
+                <div class="btn-container">
+                    <a href="#contact" class="btn nav-link" data-section="contact">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="right-content">
+              <div class="image-circle">
+                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDxUPDxIVFRUVFRUXFxcVFRUVFxcYFRUXFxYXGhcYHSggGh0l
+                    HRoXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw0NFTcZFRktKysrLSsrKysrKystLTcrKystKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AA
+                    BEIALEBHAMBIgACEQEDEQH/xAAcAAADAAMBAQEAAAAAAAAAAAAAAQIFBgcDBAj/xABDEAABAwIBCgMECAMGBwAAAAABAALwAxEEBRIhMVFhccHR4QYTQQcigZE
+                    UIzJCUqGx8XKSohUzU2KTsiVDY3N0gsL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOHIQmgE0JoBM
+                    ITQATCE7STkBJO7QqAk9JxBWknJphO0k5ArSTmwnZFpPWcQVpJyYCaJJ2BWk9ZxE0SbROIIiSci0k5OSdyftOwIiT0nFWknOpJ2LTlxnEIIknItJOVSTuiJJyCC
+                    EKiJJyREk5hBSVyTukEFJUkQglJUkUElJUkgSSaEAmhNAKkkwgaaQVCSdABJOtBKyoSTqBJO1AJBUBJOQK0nrONIRJtE4gGSdBCJOkABk2TiBCJN84gSTsBCJOsA
+                    Bk2ziTuhEm0TiAZJ0JJ2ESTsAZJ1BJOoiTfOIIiSclaScqnefujJOgQQkrMk6SRJOYSVKtSgkpKkigkpJpIEkmhABUkmEAqSTCBhUEkxJOoOSdqSTEk6AxJsnGggB
+                    Em+cQJJ2EInafsBJvnEndCJNonEAyToT9174LB1a7xTosc9x1Bun5nUBvK3Ch4Io4doqZUxbaPr5bDnPOzTbkg0iSd1nDbNi3o5byDh9FDAOxBH3q50cbOvoVD2iUB
+                    oZk7CAbD2CDQ77JJua3weNsDV/v8AJWHdvYWhw4e7zQcJ4fxehjquCefxe9TvvuSAPi1BoZk2ziCdVsuXvBOLwrfNbbEUbX8yj72ja5mkjiLjetavJrnxAMk6E/
+                    dEm1Ek7AGSdQTpvQiSdwREk5KyqTepMk6BJEk5yrKkyTqElSrKkoJKSpSUCKSaSBhNJMIGFQUhUEDEk6UFKoSToDEm2cbClUJJ1ByTsT90STsXknICSdxCJN84g
+                    STtl/DuQamMqWb7tNv23nU3aBtO70/I/JkjJz8VWbRZrOkn8LRrdNy2PxTlRtCmMnYP3WtFqjhrJ9W327T3QeuUfFFHAsOEyW0A6n1jpJPrY+p3p+DPA+Iyq76Vi
+                    qj20ST7501KhvpzM64Av94i3oAdNl7O/Awx5NeuS3DsdazdBquGktB9GjRcjTpsLG5HdcLQaxrWMaGtaA1rQLAACwAA1ABBhck+B8mYcDy8LTcR96o3zXX23fe3w
+                    stgpYKkBYU2AbmtHJe1Nq+hjFUYvHeHsFiBavhqL/4qbSRwNrj4LQfFPskplpqZNcWu1+TUddp3MedLTudcbwusNYqzFB+YMnZVxuTqzmNLmFrrPovBtcawW+h3jdp
+                    ssrjsmYXKjHV8G0UcUNL6JIDam0j0BP4tAN/eAvddT9pfgpuPomvRbbE0m+6RYea0afKdt9c0+h0aiVwWhWqUnipTJa5puD6jcRyRWNqMLXFrgQ4EggixBBsQQdRB9
+                    IZndbpl3DsyjhTjqLQK9IWrtH32tH2t5aNN/VoI+6tLvJOYBknQn770SbkSTsAZJ1U7JybkpJ3CTJOiVFSZJ0CSpVFIyTqElJMpIJKSpSgYTSTCCgmkEwgoKgpCYkn
+                    UKEk6UApEk6UDJOQOTfOJO6JJ3LyTmBJOwZ3RJO3phqBqVGUh997W6P8AMbXn7Bunh+n9Cyc/GEfW1rCnfffM+Gty1M0iSSdJOkk6yTpJK3jxq2xo4Zv2abL23u90fI
+                    N/qWtfR0Hb/A+CFHJuGYBY+Sx5/iqDzHfm4rZKbVp2M8QnBZMwmIbTFTPZQbml2bro5x0gHT7ttSyvhrxdhMZZjT5dX/DqWBP8J1P+GncFUbJTavpY1eLAvpYoPRjV6
+                    ZiTF5ZRyhRw9I1q72sYNZd+gGsncNKKt7V+d/arkdmGypUDBZtVra4Gw1C4P+b2uPxXTKvtOovxFOhh8O9wfVZTL3uDND3ht2tAJOu+my0v2zEOyk0D7uHptPHzKrv0
+                    cEGkeGsonC4lr7+673XbLHUfgea+LxXksYXFups0U3WqU9zH30fBwc3/ANU6lJZrxU3zsnYbE/epuNN3B7Tr+NP+tBpsk7k78UTtxRJO4Ek7E/feiTclJOwIyTrKoqZJ
+                    3CTJOiKZSMk6BJSTKRQIpJlSgaaSaBhUFKoIGFSlUCgoSTrQknSBJOtAyTmFSTsWknMknYknYCSd/v8AD4P0yhb/ABBpHAr4JN845Dw662Ow5P8AitHz0c0H1eNsp1hlC
+                    qA82Hlj5U2c7rDNytiPx/0t6LJe0Clm5Srjew/OmwrXwUHbMmPrZR8ONbRzX16OgN0fapPPu2HqaR0D/MFzUZZqtcWVGNDmmxBDmuBHoQTcFbV7EzivpFby3N8gBnnMcS
+                    Dd2d5bmAA6RmkG5AseFuv4rJuGri1ejSq/9ym1/wDuCDmXhn2t16AFPFUjWYPvB/1rRxIs/wCJB3rrXhfxRhMo0jVwryQ02eHNLXMNr2N9HyJCw1PwTknOzvoVC/8AB7v
+                    8v2fyWteKPEeIGLr4PJt2MwWDqVHeUwANre6W6LWIa301HOdoNkGyZW9qOT6WczDuFaoCR6spgjXdztJ+A+IXPMtZYr42p5tepnfhA0MaNjW+n6n1JXRsj08nZawlLGVsN
+                    SqOc2zyW+817dFRueLOtnatOkWKyeC8K5MonOpYOgHD73ltc7+ZwJRHPfZ1kN9fGsrlv1VE55cdReB7jQfU51ncBvCwnjjE/SMoYip6eYWDhTApj55t/iu51apYw5jblrTm
+                    tFtJA0AemtfmNuXTcivTIcCQ6x051/euDvv6oPWpRWVrMvkWuPwvYR/rUx+hK+GhiqNXQx4vsOg/IrN5QpZmQq7vxVGNH+rT5AoObyTsSbkTvxQJJ0KJJ3U7hMzpxSJknMJ
+                    Mk6IplSZJ0BGSdUUypQIpJlSUAVKZSQATSTCCk1KYQUFQknSUwUFBUJJ1iSdqBQWDJObnaftMk7sFA5J2bappubUbrY4OHwN5LqSdhwuLINu9rGFBrYfGM+xiKDSDvbp/2u
+                    b8loa6dkKj/a2QquCGnE4E+ZSHq+mb6B83N3e4uZuCDoXsg8QYbC1a1LEOZT80NLajiGgZmddhcdV73HA7Qto8Xe0MfRS7JlakTfNe9zgKjdIA8ui8Xfe98+xAG/VxMFWCg
+                    7n7GMpYmvRxL8RVq1frWAOqVC/7l3NDSfd1g7DcbFvuCybRpV62IY2z6/l+ZscabS1v5HSuQ+wvFOFbE0r+6WU323tcW3+TvyGxbvWH/D8O3SbYvCDSST7uOYNZ16lRsnh7
+                    CYbB0WYGg5v1Tblt25/vEkvc0aRnEkrkvtV8TY1mUqmHpYqqynTFIhlN5p2c6m1xuWWLtd9JOtdIyXQZ/aGMrFrc62HbnWGcAKRJAOsA3HyX53yvlWpi8RUxVX7VV5eR6C+
+                    po3AWHwUHY2+06jhcl0C6sMVjHUhdrfuvte9U+mboB9XEG3qRxR9QkkuNySSTtJ0k/NeRcpLkDe5dA8XPfh8kYLBPcS+p9c8HSbAEgX4ub8lgPZ94fOUMeymf7qn9ZVd6Bj
+                    dJud+pe3jzLQxmPqVGf3bPq6Y9M1lxe3G/5fANekncnbggybEXknMEZJ0Rk2IJSvJOQIyTrJTKV5JzBGSdEUFJAikmVKASQkgE0k0DVKQmEFJqQmEFBUJJ0hVdBQTEm2cZkn
+                    ZgoLBknNyTtF5JzoFBk/DOXquTsZTxlHTmmz2HVUpnQ9h4j5EA+i2X2i+HKL2jLGTTn4Wv7z2gaaLz9oEDUL69h3ELR5J2zfhTxPWye9wAz6FTRVpHS06LXAOgG3zGg7g1lz
+                    VK3nK/hmhimnFZKcHNOk0CbOafUMvr/gOnZfUtMrUXNcWuBa4GxBBBB2EHSEG/+xKtbG1m7aF/lUZ1W/062dgqX/nsH8uU7clzL2RYhtPKRDnBvmUXsbc2u7OY4NG/3St8we
+                    IAwdEfiymR8fp9R/JBtGBrDzsY7Y9gPww1J3/0vzODoXfqeNDWZUq/gqPP8mCoj9Qvz9dBecvfA4SpXqto0Wlz3mwAX0ZHyJiMU61Jvu30vdoYPj6ncFutLHYXI1MswtquLc
+                    LGodTL/pw/dBkMuV6WRMnf2Xh3B2MxADsVUbrY0/8ALaR8uq5tP2nb0xNd9R7qlRxc5xu4nWT1nHyvJOYEk7IybUEyTkryTkBeSc5KZU3QBknRFBKSBJJlSgEigpIApIQgEJ
+                    JoGmpTQUmpTQUmpumgq6YknSbpgoKunJvnGbyTk7oKunJO0XknNgoPbC4mpRdn0nFp9dh4j1WdPiZlcBuOotqWAAcQc4DdUaQ8DdcjctdvJORdBm35OyfV00qtWnuIZXHzBY
+                    R8irGTi1rWMygQ1jg9jc3ENDHDSHNABAdpOkbVgC0bJJtoE7T8ygzzsnXDvMxtVwe7OeG06hDidbnGo9tydpulTZk6hpzTUd/1HZ/9DLN+DiVgHC+vTx0yfBgoM7jvE1Z4zK
+                    X1bdWi17bABoaOCwZOv877Tt6wImScy6BkyTkiZPScUTJOSugd5JzV5JyRKV0DukkSkgEigpIBJNJAkISQCEJIBCEIGhJNA01KaCkJXTQNO6m6aCrp3knKE7oLui8k5zdF0F
+                    3ReScpvJOZdBV0XknObyTkXQVdF5JylF0FXSvJOaui6B3SukSldA7ouldJA0kkXQCSCkgaSEkAhCSAQhCAQhCAQhCBoSQgpCSEFISQgpF0roQUi6lO6CroupRdBV0XSQgd0X
+                    UpoHdF1N0XQO6ErpIHdCSEBdJCSBpIQgEJIQCEIQCEIQCEIQCEIQCEIQNCEIBNCEAhCEDQhCATCEIBCEIBCEIEhNCBIQhAkIQgSEIQBSQhAIQhAIQhAIQhB//Z" alt="Promise" class="profile-image">
+               
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-container">
+            <div class="bg-elements">
+                <div class="bg-circle circle-1"></div>
+                <div class="bg-circle circle-2"></div>
+            </div>
+            
+            <div class="about-content">
+                <h1 class="section-title">About Me</h1>
+                <p class="about-text">
+                    I'm a passionate [Your Profession] with [X] years of experience creating digital experiences 
+                    that blend form and function. My journey in tech began when [personal story or motivation], 
+                    and I've been hooked ever since.
+                </p>
+                <p class="about-text">
+                    Specializing in [your specialties], I approach every project with a focus on [your philosophy 
+                    or methodology]. When I'm not coding or designing, you'll find me [personal interests/hobbies].
+                </p>
+                
+                <div class="skills-section">
+                    <h2 class="skills-title">My Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div>HTML5</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div>CSS3</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div>Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div>Database</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <div class="about-img-wrapper">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ97bOWFXX-HQSdmn8ddPweCVQcAOwjm9w9g&s" alt="About Me" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="portfolio-container">
+            <div class="section-header">
+                <h1 class="section-title">My Works</h1>
+                <p class="section-subtitle">A collection of my recent projects and creative works.</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 1
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">E-Commerce Platform</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 2
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Mobile Fitness App</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 3 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 3
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Dashboard UI</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 4 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 4
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Portfolio Template</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 5 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 5
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Brand Identity</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">Logo Design</span>
+                            <span class="tag">Illustrator</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Project 6 -->
+                <a href="#" class="portfolio-item">
+                    <div class="empty-portfolio">
+                        Project Image 6
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="portfolio-title">Task Manager</h3>
+                        <div class="portfolio-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="view-all">
+                <a href="#" class="view-all-btn">
+                    View All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <!-- Background Grid Lines -->
+            <div class="contact-bg-elements">
+                <div class="grid-line horizontal" style="top: 25%;"></div>
+                <div class="grid-line horizontal" style="top: 50%;"></div>
+                <div class="grid-line horizontal" style="top: 75%;"></div>
+                <div class="grid-line vertical" style="left: 25%;"></div>
+                <div class="grid-line vertical" style="left: 50%;"></div>
+                <div class="grid-line vertical" style="left: 75%;"></div>
+            </div>
+            
+            <div class="contact-content">
+                <h1 class="section-title">Get In Touch</h1>
+                
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3 class="info-title"><i class="fas fa-envelope"></i> Email</h3>
+                    <p class="info-text">
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3 class="info-title"><i class="fas fa-phone-alt"></i> Phone</h3>
+                    <p class="info-text">
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3 class="info-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p class="info-text">
+                        San Francisco, CA<br>
+                        Available for remote work worldwide
+                    </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3 class="info-title"><i class="fas fa-share-alt"></i> Social</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer id="footer">
+            <li>Copyright &copy; 2025 Promise Ugo</li>
+           </footer>
+    </section>
+ 
+</body>
+</html>
